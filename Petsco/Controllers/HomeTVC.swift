@@ -14,21 +14,61 @@ class HomeTVC: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         let labelTitle = UILabel()
         labelTitle.frame = CGRect(x: 0, y: 0, width: 100, height: 44)
         labelTitle.text = "Home"
         labelTitle.textAlignment = .center
         labelTitle.textColor = UIColor.white
-        self.parent?.navigationItem.titleView = labelTitle
         
+        self.tabBarController?.navigationItem.titleView = labelTitle
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        print("home vc")
+        switch indexPath.row {
+        case 0:
+            return 160
+        case 1:
+            return 100
+        default:
+            return 140
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // MARK: - Table view data source
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 2
     }
-
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        var cell = UITableViewCell()
+        
+        switch indexPath.row {
+        case 0:
+            cell = tableView.dequeueReusableCell(withIdentifier: "sliderTVCell", for: indexPath) as! SliderTVCell
+            cell.setNeedsLayout()
+            cell.layoutIfNeeded()
+            break
+            
+        case 1:
+            cell = tableView.dequeueReusableCell(withIdentifier: "petsCategoryTVCell", for: indexPath) as! PetsCategoryTVCell
+            
+            cell.setNeedsLayout()
+            cell.layoutIfNeeded()
+            
+            break
+        default:
+            break
+        }
+        return cell
+    }
+    
 }
 

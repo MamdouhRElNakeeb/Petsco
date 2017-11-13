@@ -1,5 +1,5 @@
 //
-//  SliderTVCell.swift
+//  PetsCategoryTVCell.swift
 //  Petsco
 //
 //  Created by Mamdouh El Nakeeb on 11/13/17.
@@ -8,38 +8,36 @@
 
 import UIKit
 
-class SliderTVCell: UITableViewCell {
+class PetsCategoryTVCell: UITableViewCell {
+
+    @IBOutlet weak var petsCategoryCV: UICollectionView!
     
-    @IBOutlet weak var sliderCV: UICollectionView!
-    
-    
-    var sourceArray: [String] = ["slide1.jpg", "slide2.jpg", "slide3.jpg", "slide4.jpg", "slide5.jpg"]
+    var sourceArray: [String] = ["Dog", "Cat", "Fish", "Bird", "Small Pet", "Reptile"]
     
     override func layoutIfNeeded() {
-        sliderCV.frame = CGRect(x: 8, y: 5, width: contentView.frame.width - 16, height: contentView.frame.height - 10)
+        //petsCategoryCV.frame = CGRect(x: 8, y: 10, width: contentView.frame.width - 16, height: contentView.frame.height - 20)
+        
+        petsCategoryCV.dropShadow2()
     }
-    
+
 }
 
-
 // MARK: - Collection View Data source and Delegate
-extension SliderTVCell: UICollectionViewDataSource,UICollectionViewDelegate {
-    
-    
+extension PetsCategoryTVCell: UICollectionViewDataSource,UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return sourceArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "sliderCVCell", for: indexPath) as! SliderCVCell
-        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "petsCategoryCVCell", for: indexPath) as! PetsCategoryCVCell
         cell.setNeedsLayout()
         cell.layoutIfNeeded()
-        
         //cell.sliderCellIV.sd_setImage(with: URL(string: imgUrl), placeholderImage: UIImage(named: "slidertemp"))
-        cell.sliderCellIV.image = UIImage(named: "sliderTemp")
+        
+        cell.petsCategoryIV.image = UIImage(named: "cart_icon")
+        cell.petsCategoryLbl.text = sourceArray[indexPath.row]
         
         return cell
     }
@@ -50,4 +48,3 @@ extension SliderTVCell: UICollectionViewDataSource,UICollectionViewDelegate {
     
     
 }
-

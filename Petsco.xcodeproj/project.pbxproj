@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		334E51641FB923BC00C2CB90 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334E51631FB923BC00C2CB90 /* CategoriesVC.swift */; };
+		339695681FBA0A66005CA008 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339695671FBA0A66005CA008 /* LoginVC.swift */; };
+		3396956A1FBA0E43005CA008 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339695691FBA0E43005CA008 /* RegisterVC.swift */; };
+		3396956C1FBA1F05005CA008 /* PetsCategoryTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3396956B1FBA1F05005CA008 /* PetsCategoryTVCell.swift */; };
+		3396956E1FBA1F66005CA008 /* PetsCategoryCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3396956D1FBA1F66005CA008 /* PetsCategoryCVCell.swift */; };
+		339695701FBA3880005CA008 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3396956F1FBA3880005CA008 /* Extensions.swift */; };
 		33ABD2B31FB9E5B200F89BC4 /* SliderTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ABD2B21FB9E5B200F89BC4 /* SliderTVCell.swift */; };
 		33ABD2B51FB9E5D800F89BC4 /* SliderCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ABD2B41FB9E5D800F89BC4 /* SliderCVCell.swift */; };
 		33CC54251F97968E001F0F6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC54241F97968E001F0F6A /* AppDelegate.swift */; };
@@ -19,6 +24,11 @@
 
 /* Begin PBXFileReference section */
 		334E51631FB923BC00C2CB90 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
+		339695671FBA0A66005CA008 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		339695691FBA0E43005CA008 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		3396956B1FBA1F05005CA008 /* PetsCategoryTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsCategoryTVCell.swift; sourceTree = "<group>"; };
+		3396956D1FBA1F66005CA008 /* PetsCategoryCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsCategoryCVCell.swift; sourceTree = "<group>"; };
+		3396956F1FBA3880005CA008 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		33ABD2B21FB9E5B200F89BC4 /* SliderTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderTVCell.swift; sourceTree = "<group>"; };
 		33ABD2B41FB9E5D800F89BC4 /* SliderCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCVCell.swift; sourceTree = "<group>"; };
 		33CC54211F97968E001F0F6A /* Petsco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Petsco.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +56,8 @@
 			children = (
 				33CC54261F97968E001F0F6A /* HomeTVC.swift */,
 				334E51631FB923BC00C2CB90 /* CategoriesVC.swift */,
+				339695671FBA0A66005CA008 /* LoginVC.swift */,
+				339695691FBA0E43005CA008 /* RegisterVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -55,6 +67,8 @@
 			children = (
 				33ABD2B21FB9E5B200F89BC4 /* SliderTVCell.swift */,
 				33ABD2B41FB9E5D800F89BC4 /* SliderCVCell.swift */,
+				3396956B1FBA1F05005CA008 /* PetsCategoryTVCell.swift */,
+				3396956D1FBA1F66005CA008 /* PetsCategoryCVCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -85,6 +99,7 @@
 				33CC542B1F97968E001F0F6A /* Assets.xcassets */,
 				33CC542D1F97968E001F0F6A /* LaunchScreen.storyboard */,
 				33CC54301F97968E001F0F6A /* Info.plist */,
+				3396956F1FBA3880005CA008 /* Extensions.swift */,
 			);
 			path = Petsco;
 			sourceTree = "<group>";
@@ -161,11 +176,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3396956E1FBA1F66005CA008 /* PetsCategoryCVCell.swift in Sources */,
 				334E51641FB923BC00C2CB90 /* CategoriesVC.swift in Sources */,
 				33CC54271F97968E001F0F6A /* HomeTVC.swift in Sources */,
+				339695681FBA0A66005CA008 /* LoginVC.swift in Sources */,
 				33ABD2B31FB9E5B200F89BC4 /* SliderTVCell.swift in Sources */,
+				339695701FBA3880005CA008 /* Extensions.swift in Sources */,
+				3396956A1FBA0E43005CA008 /* RegisterVC.swift in Sources */,
 				33CC54251F97968E001F0F6A /* AppDelegate.swift in Sources */,
 				33ABD2B51FB9E5D800F89BC4 /* SliderCVCell.swift in Sources */,
+				3396956C1FBA1F05005CA008 /* PetsCategoryTVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
