@@ -8,18 +8,27 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeTVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let labelTitle = UILabel()
+        labelTitle.frame = CGRect(x: 0, y: 0, width: 100, height: 44)
+        labelTitle.text = "Home"
+        labelTitle.textAlignment = .center
+        labelTitle.textColor = UIColor.white
+        self.parent?.navigationItem.titleView = labelTitle
+        
+        
+        print("home vc")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 

@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		334E51641FB923BC00C2CB90 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334E51631FB923BC00C2CB90 /* CategoriesVC.swift */; };
+		33ABD2B31FB9E5B200F89BC4 /* SliderTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ABD2B21FB9E5B200F89BC4 /* SliderTVCell.swift */; };
+		33ABD2B51FB9E5D800F89BC4 /* SliderCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ABD2B41FB9E5D800F89BC4 /* SliderCVCell.swift */; };
 		33CC54251F97968E001F0F6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC54241F97968E001F0F6A /* AppDelegate.swift */; };
-		33CC54271F97968E001F0F6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC54261F97968E001F0F6A /* ViewController.swift */; };
+		33CC54271F97968E001F0F6A /* HomeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC54261F97968E001F0F6A /* HomeTVC.swift */; };
 		33CC542A1F97968E001F0F6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33CC54281F97968E001F0F6A /* Main.storyboard */; };
 		33CC542C1F97968E001F0F6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33CC542B1F97968E001F0F6A /* Assets.xcassets */; };
 		33CC542F1F97968E001F0F6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33CC542D1F97968E001F0F6A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		334E51631FB923BC00C2CB90 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
+		33ABD2B21FB9E5B200F89BC4 /* SliderTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderTVCell.swift; sourceTree = "<group>"; };
+		33ABD2B41FB9E5D800F89BC4 /* SliderCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCVCell.swift; sourceTree = "<group>"; };
 		33CC54211F97968E001F0F6A /* Petsco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Petsco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33CC54241F97968E001F0F6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		33CC54261F97968E001F0F6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		33CC54261F97968E001F0F6A /* HomeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTVC.swift; sourceTree = "<group>"; };
 		33CC54291F97968E001F0F6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33CC542B1F97968E001F0F6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33CC542E1F97968E001F0F6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +41,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33ABD2B11FB9E58F00F89BC4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				33CC54261F97968E001F0F6A /* HomeTVC.swift */,
+				334E51631FB923BC00C2CB90 /* CategoriesVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		33ABD2B61FB9E5E300F89BC4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				33ABD2B21FB9E5B200F89BC4 /* SliderTVCell.swift */,
+				33ABD2B41FB9E5D800F89BC4 /* SliderCVCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		33CC54181F97968E001F0F6A = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +78,9 @@
 		33CC54231F97968E001F0F6A /* Petsco */ = {
 			isa = PBXGroup;
 			children = (
+				33ABD2B11FB9E58F00F89BC4 /* Controllers */,
+				33ABD2B61FB9E5E300F89BC4 /* Cells */,
 				33CC54241F97968E001F0F6A /* AppDelegate.swift */,
-				33CC54261F97968E001F0F6A /* ViewController.swift */,
 				33CC54281F97968E001F0F6A /* Main.storyboard */,
 				33CC542B1F97968E001F0F6A /* Assets.xcassets */,
 				33CC542D1F97968E001F0F6A /* LaunchScreen.storyboard */,
@@ -96,7 +121,7 @@
 				TargetAttributes = {
 					33CC54201F97968E001F0F6A = {
 						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -136,8 +161,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33CC54271F97968E001F0F6A /* ViewController.swift in Sources */,
+				334E51641FB923BC00C2CB90 /* CategoriesVC.swift in Sources */,
+				33CC54271F97968E001F0F6A /* HomeTVC.swift in Sources */,
+				33ABD2B31FB9E5B200F89BC4 /* SliderTVCell.swift in Sources */,
 				33CC54251F97968E001F0F6A /* AppDelegate.swift in Sources */,
+				33ABD2B51FB9E5D800F89BC4 /* SliderCVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,11 +290,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Petsco/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.petsco.Petsco;
+				PRODUCT_BUNDLE_IDENTIFIER = net.petsco.mob;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -274,11 +305,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Petsco/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.petsco.Petsco;
+				PRODUCT_BUNDLE_IDENTIFIER = net.petsco.mob;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -301,6 +335,7 @@
 				33CC54351F97968E001F0F6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
