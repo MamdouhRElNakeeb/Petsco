@@ -16,7 +16,7 @@ class SliderTVCell: UITableViewCell {
     var sourceArray: [String] = ["slide1.jpg", "slide2.jpg", "slide3.jpg", "slide4.jpg", "slide5.jpg"]
     
     override func layoutIfNeeded() {
-        sliderCV.frame = CGRect(x: 8, y: 5, width: contentView.frame.width - 16, height: contentView.frame.height - 10)
+        sliderCV.frame = CGRect(x: 0, y: 0, width: contentView.frame.width, height: contentView.frame.height)
     }
     
 }

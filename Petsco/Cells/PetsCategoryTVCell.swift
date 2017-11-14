@@ -10,14 +10,14 @@ import UIKit
 
 class PetsCategoryTVCell: UITableViewCell {
 
+    @IBOutlet weak var backgroundV: UIView!
     @IBOutlet weak var petsCategoryCV: UICollectionView!
     
     var sourceArray: [String] = ["Dog", "Cat", "Fish", "Bird", "Small Pet", "Reptile"]
     
     override func layoutIfNeeded() {
-        //petsCategoryCV.frame = CGRect(x: 8, y: 10, width: contentView.frame.width - 16, height: contentView.frame.height - 20)
         
-        petsCategoryCV.dropShadow2()
+        backgroundV.dropShadow2()
     }
 
 }
@@ -36,7 +36,7 @@ extension PetsCategoryTVCell: UICollectionViewDataSource,UICollectionViewDelegat
         cell.layoutIfNeeded()
         //cell.sliderCellIV.sd_setImage(with: URL(string: imgUrl), placeholderImage: UIImage(named: "slidertemp"))
         
-        cell.petsCategoryIV.image = UIImage(named: "cart_icon")
+        cell.petsCategoryIV.image = UIImage(named: "sale_icon")
         cell.petsCategoryLbl.text = sourceArray[indexPath.row]
         
         return cell

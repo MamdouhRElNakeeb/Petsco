@@ -10,10 +10,15 @@ import UIKit
 
 class RegisterVC: UIViewController {
 
+    @IBOutlet weak var fbSignupBtn: UIButton!
+    @IBOutlet weak var signupBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        fbSignupBtn.layer.cornerRadius = fbSignupBtn.frame.height / 2
+        signupBtn.layer.cornerRadius = signupBtn.frame.height / 2
     }
 
     @IBAction func signupBtnClick(_ sender: UIButton) {

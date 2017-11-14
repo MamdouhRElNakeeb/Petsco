@@ -194,7 +194,7 @@ extension UIView{
     func dropShadow2() {
         
         self.layer.shadowColor = UIColor.black.cgColor
-        self.layer.shadowOpacity = 0.4
+        self.layer.shadowOpacity = 0.2
         self.layer.shadowOffset = CGSize(width: -1, height: 0)
         self.layer.shadowRadius = 9
         
@@ -217,5 +217,35 @@ extension UIView{
         //self.layer.cornerRadius = 5
         
         self.layer.masksToBounds = false
+    }
+    
+    func setMask(with hole: CGRect){
+        
+        
+        let bezierPath = UIBezierPath(rect: self.bounds)
+        
+        let mask = CAShapeLayer()
+        mask.bounds = self.bounds
+        mask.position = self.center
+        mask.path = bezierPath.cgPath
+        
+        // Mask to Path
+//        let mask = CAShapeLayer()
+//        mask.path = bezierPath.cgPath
+        
+        /*
+        // Create a mutable path and add a rectangle that will be h
+        let mutablePath = CGMutablePath()
+        mutablePath.addRect(self.frame)
+        mutablePath.addRect(hole)
+        
+        // Create a shape layer and cut out the intersection
+        let mask = CAShapeLayer()
+        mask.path = mutablePath
+        mask.fillRule = kCAFillRuleEvenOdd
+        */
+        // Add the mask to the view
+        self.layer.mask = mask
+        
     }
 }
