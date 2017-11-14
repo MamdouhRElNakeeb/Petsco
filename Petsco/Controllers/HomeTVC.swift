@@ -35,6 +35,8 @@ class HomeTVC: UITableViewController {
             return 160
         case 1:
             return 100
+        case 2:
+            return 200
         default:
             return 140
         }
@@ -43,31 +45,38 @@ class HomeTVC: UITableViewController {
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return 3
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var cell = UITableViewCell()
-        
         switch indexPath.row {
         case 0:
-            cell = tableView.dequeueReusableCell(withIdentifier: "sliderTVCell", for: indexPath) as! SliderTVCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "sliderTVCell", for: indexPath) as! SliderTVCell
             cell.setNeedsLayout()
             cell.layoutIfNeeded()
-            break
+            return cell
             
         case 1:
-            cell = tableView.dequeueReusableCell(withIdentifier: "petsCategoryTVCell", for: indexPath) as! PetsCategoryTVCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "petsCategoryTVCell", for: indexPath) as! PetsCategoryTVCell
             
             cell.setNeedsLayout()
             cell.layoutIfNeeded()
             
-            break
+            return cell
+        case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "promotionsTVCell", for: indexPath) as! PromotionsTVCell
+            
+            cell.setNeedsLayout()
+            cell.layoutIfNeeded()
+            
+            cell.promo1IV.image = UIImage(named: "biggestsale")
+            cell.promo2IV.image = UIImage(named: "newarrivals")
+            return cell
+            
         default:
-            break
+            return UITableViewCell()
         }
-        return cell
     }
     
 }

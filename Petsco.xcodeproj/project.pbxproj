@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		331001071FBA552600017F56 /* PromotionsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331001061FBA552600017F56 /* PromotionsTVCell.swift */; };
 		334E51641FB923BC00C2CB90 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334E51631FB923BC00C2CB90 /* CategoriesVC.swift */; };
 		339695681FBA0A66005CA008 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339695671FBA0A66005CA008 /* LoginVC.swift */; };
 		3396956A1FBA0E43005CA008 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339695691FBA0E43005CA008 /* RegisterVC.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		331001061FBA552600017F56 /* PromotionsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionsTVCell.swift; sourceTree = "<group>"; };
 		334E51631FB923BC00C2CB90 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
 		339695671FBA0A66005CA008 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		339695691FBA0E43005CA008 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				33ABD2B41FB9E5D800F89BC4 /* SliderCVCell.swift */,
 				3396956B1FBA1F05005CA008 /* PetsCategoryTVCell.swift */,
 				3396956D1FBA1F66005CA008 /* PetsCategoryCVCell.swift */,
+				331001061FBA552600017F56 /* PromotionsTVCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				33ABD2B31FB9E5B200F89BC4 /* SliderTVCell.swift in Sources */,
 				339695701FBA3880005CA008 /* Extensions.swift in Sources */,
 				3396956A1FBA0E43005CA008 /* RegisterVC.swift in Sources */,
+				331001071FBA552600017F56 /* PromotionsTVCell.swift in Sources */,
 				33CC54251F97968E001F0F6A /* AppDelegate.swift in Sources */,
 				33ABD2B51FB9E5D800F89BC4 /* SliderCVCell.swift in Sources */,
 				3396956C1FBA1F05005CA008 /* PetsCategoryTVCell.swift in Sources */,
